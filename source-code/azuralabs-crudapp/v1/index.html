@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Product List
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>
+        <center>Product List Muhammad Arif Noviarrizal</center>
+    </h1>
+    <hr>
+    <div class="product-form">
+        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+            <div>
+                <label>Nama Product</label><label class="validation-error hide" id="namaProductValidationError">This
+                    field
+                    is
+                    required.</label>
+                <input type="text" name="namaproduct" id="namaproduct">
+            </div>
+            <div>
+                <label>Harga</label>
+                <input type="text" name="harga" id="harga">
+            </div>
+            <div class="form-action-buttons">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <br />
+    <div class="product-table">
+        <table class="list" id="productList">
+            <thead>
+                <tr>
+                    <th>Nama Product</th>
+                    <th>Harga</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
